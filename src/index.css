@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Inconsolata';
+  src: url(./fonts/Inconsolata-VariableFont_wdth,wght.ttf), format('truetype');
+}
+
+body {
+  font-family: Inconsolata;
+}
+
+@layer components {
+  ::-webkit-scrollbar {
+    @apply w-2
+  }
+  ::-webkit-scrollbar-track-piece {
+    @apply bg-primary-800
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-primary-600
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-primary-500
+  }
+  table {
+    @apply border-collapse
+  }
+  table.data-table td {
+    @apply border-none p-0 pr-4
+  }
+  table.data-table td:nth-child(1) {
+    @apply font-bold
+  }
+  .selectable-table-container {
+    @apply w-full overflow-x-auto
+  }
+  table.selectable-table {
+    @apply table-auto w-full mt-4
+  }
+  table.selectable-table thead {
+    @apply sticky top-0 text-left bg-primary-700 align-top
+  }
+  table.selectable-table th,td {
+    @apply border border-slate-700 pl-2
+  }
+  table.selectable-table tr.unselected:nth-child(even) {
+    @apply bg-primary-700
+  }
+  table.selectable-table tbody tr.unselected:hover {
+    @apply bg-secondary-800
+  }
+  table.selectable-table .selected {
+    @apply text-primary-900
+  }
+  .table-view {
+    @apply basis-3/12 mt-1 mb-2
+  }
+  .sub-table-view {
+    @apply basis-9/12 flex-col
+  }
+  .selections {
+    @apply flex flex-row flex-wrap
+  }
+  .box {
+    @apply m-2 p-2 border border-gray-600
+  }
+  button.bordered-button {
+    @apply p-1 mt-1 border border-gray-600;
+  }
+  input {
+    @apply p-1 m-1 border border-gray-600 bg-transparent;
+  }
+  input:focus {
+    @apply border-b-sky-500 outline-none;
+  }
+  .manifest-line {
+    @apply flex w-full break-all text-left
+  }
+  .manifest-line-number {
+    @apply w-12 pr-2 mr-2 grow-0 shrink-0 text-right text-primary-400
+  }
+  rect.segment-video, rect.segment-audio {
+    @apply stroke-primary-400
+  }
+  .debug-video-title {
+    @apply text-[hsl(269,100%,80%)]
+  }
+  .selected-green {
+    @apply text-secondary-300
+  }
+  .manifest-tag {
+    @apply font-bold text-[hsl(269,100%,80%)]
+  }
+}
