@@ -25,7 +25,7 @@
     "build:react": "react-scripts build",
     "build:electron": "cp -r electron/. build/electron",
     "package": "npm run build && npm run package:electron",
-    "package:electron": "electron-builder build --mac -c.extraMetadata.main=build/electron/main.js --publish never",
+    "package:electron": "SKIP_NOTARIZE=true electron-builder build --mac -c.extraMetadata.main=build/electron/main.js --publish never",
     "postinstall": "electron-builder install-app-deps",
     "lint:electron": "eslint electron/**/*.js"
   },

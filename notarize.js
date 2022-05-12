@@ -9,6 +9,11 @@ module.exports = async (params) => {
     return;
   }
 
+  if (process.env.SKIP_NOTARIZE) {
+    console.log('Skipping notarization due to SKIP_NOTARIZE');
+    return;
+  }
+
   const appPath = path.join(
     params.appOutDir,
     `${params.packager.appInfo.productFilename}.app`
