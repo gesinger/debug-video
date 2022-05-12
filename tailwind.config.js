@@ -7,12 +7,6 @@ module.exports = {
         display: ['IBM Plex Mono', 'Fira Mono', 'monospace'],
         body: ['IBM Plex Mono', 'Fira Mono', 'monospace'],
       },
-      fontSize: {
-        sm: ['10px', '16px'],
-        base: ['12px', '18px'],
-        lg: ['14px', '20px'],
-        xl: ['16px', '24px'],
-      },
       colors: {
         primary: {
           50: '#f9fafb',
