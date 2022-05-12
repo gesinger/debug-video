@@ -6,7 +6,7 @@ A debugging tool for streaming media. See the [debug.video](https://debug.video)
 
 `ffmpeg` and `ffprobe` (version 4 or 5) are required on your $PATH for debug.video to work. Note that `ffprobe` comes with `ffmpeg`.
 
-Once you've verified you can run `ffmpeg` and `ffprobe`, download and install the DMG from the releases page.
+Once you've verified you can run `ffmpeg` and `ffprobe`, download and install the DMG from the [releases](https://github.com/gesinger/debug-video/releases) page.
 
 ## Developing
 
@@ -30,7 +30,7 @@ Does the same as `npm run dev` but adds `--inspect`. After running, open `chrome
 
 For testing a packaged build yourself, `npm run package` builds both React and Electron and runs `electron-builder` to package everything together. The app is put into the `dist/` directory and can be installed by opening `debug.video-v#.#.#.dmg`.
 
-For releasing to others, macOS requires the code to be signed and notarized. This is done automatically by a GitHub action when a tag is pushed. It will create a draft of a release on the Releases page. Once that draft is published, users can download the `debug.video-v#.#.#.dmg` asset.
+For releasing to others, macOS requires the code to be signed and notarized. This is done automatically by a GitHub action when a tag is pushed. It will create a draft of a release on the Releases page. Once that draft is published, users can download the `debug-video-v#.#.#.dmg` asset.
 
 The GitHub action can be viewed in the `.github` directory. The notarization script is `notarize.js`. The entitlements file is `entitlements.mac.plist`.
 
