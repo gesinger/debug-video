@@ -5,13 +5,13 @@ const getSegmentTimes = ({ streams, frames }) => {
   const videoStreams = streams.filter(({ codecType }) => codecType === 'video');
   const audioStreams = streams.filter(({ codecType }) => codecType === 'audio');
   const subtitleStreams = streams.filter(({ codecType }) => codecType === 'subtitle');
-  const hasVideo = !!videoStreams.length;
-  const hasAudio = !!audioStreams.length;
-  const hasSubtitles = !!subtitleStreams.length;
   // frames come sorted by PTS time
   const videoFrames = frames.filter(({ mediaType }) => mediaType === 'video');
   const audioFrames = frames.filter(({ mediaType }) => mediaType === 'audio');
   const subtitleFrames = frames.filter(({ mediaType }) => mediaType === 'subtitle');
+  const hasVideo = !!videoStreams.length && !!videoFrames.length;
+  const hasAudio = !!audioStreams.length && !!audioFrames.length;
+  const hasSubtitles = !!subtitleStreams.length && !!subtitleFrames.length;
   // assume each stream uses the same frame/sample rate
   const videoFrameSeconds = hasVideo && 1 / videoStreams[0].framerate;
   const audioFrameSeconds = hasAudio && 1000 / audioStreams[0].sampleRate;
