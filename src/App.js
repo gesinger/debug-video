@@ -63,7 +63,7 @@ export default function App(props) {
       }
       {ffprobeExists === false &&
         <div className="my-4 flex justify-center items-center space-x-2">
-          <ExclamationCircle  className="block text-red-500 w-5 h-5" />
+          <ExclamationCircle className="block text-red-500 w-6 h-6" />
           <div>ffprobe doesn't exist and is required for sgment probing</div>
         </div>
       }
@@ -82,7 +82,7 @@ export default function App(props) {
       {failedInput &&
         <div className="my-4 flex flex-col justify-center items-center">
           <div className="flex space-x-2">
-            <ExclamationCircle  className="block text-red-500 w-5 h-5" />
+            <ExclamationCircle className="block text-red-500 w-6 h-6" />
             <p>Failed to load URL: {failedInput.error.name} [{failedInput.error.code}]</p>
           </div>
           <div>{failedInput.error.message}</div>

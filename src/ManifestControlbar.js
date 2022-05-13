@@ -36,7 +36,7 @@ export default function ManifestControlbar({
       {isLoading && (
         <div className="mt-2 mb-2 flex">
           <span className="px-1">Loading...</span>
-          <LoadingSpinner width={15} height={15} />
+          <LoadingSpinner width={23} height={23} />
         </div>
       )}
       <button
