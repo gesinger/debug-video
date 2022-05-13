@@ -110,7 +110,7 @@ export default function SegmentStreamView({ stream, show, timeRanges }) {
         <p className="mt-2"><strong>Contains Closed Captions</strong></p>
       }
       {frames.length > 0 && codecType === 'video' && (
-        <div className="h-16 mt-4">
+        <div className="h-20 mt-4">
           {getFramesPie(frames)}
         </div>
       )}
