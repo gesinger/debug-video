@@ -13,7 +13,7 @@ export default function CollapsibleView({
 }) {
   const [showHelp, setShowHelp] = useState(false);
 
-  const chevronClass = 'w-3 h-3';
+  const chevronClass = 'w-6 h-6';
   const helpButtonColor = showHelp ? 'text-sky-500' : 'text-primary-50';
 
   return (

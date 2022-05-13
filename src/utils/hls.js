@@ -41,7 +41,7 @@ const renderLink = ({
         </div>
         {lineContents}
         <div className="ml-1">
-          <LoadingSpinner width={15} height={15} />
+          <LoadingSpinner width={23} height={23} />
         </div>
       </div>
     );
@@ -61,7 +61,7 @@ const renderLink = ({
         <div>
           <ExclamationCircle
             title={getErrorString(failedDownload)}
-            className={`block ml-2 mt-0.5 text-red-500 w-3.5 h-3.5`}
+            className={`block ml-2 mt-0.5 text-red-500 w-4.5 h-4.5`}
           />
         </div>
       )}
@@ -122,7 +122,7 @@ const renderExclamation = (exclamation) => {
 
   return (
     <div>
-      <ExclamationCircle className={`block ml-auto mt-0.5 ${circleColor} w-3.5 h-3.5`} />
+      <ExclamationCircle className={`block ml-auto mt-0.5 ${circleColor} w-4.5 h-4.5`} />
     </div>
   );
 };

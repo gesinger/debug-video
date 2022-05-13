@@ -63,7 +63,7 @@ export default function PromptView() {
           </div>
         </div>
       </div>
-      <div className="mt-2" style={{ width: 500 }}>
+      <div className="mt-16" style={{ width: 500 }}>
         <StreamingMediaViz />
       </div>
     </div>

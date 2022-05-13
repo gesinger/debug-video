@@ -101,7 +101,7 @@ export default function MultiSelectTableView({
                           <div className="flex space-x-1">
                             <SortAscending
                               className={
-                                `cursor-pointer h-3.5 ${
+                                `cursor-pointer h-4.5 ${
                                   isSortedAscending ? 'selected-green' : ''
                                 }`
                               }
@@ -118,7 +118,7 @@ export default function MultiSelectTableView({
                             />
                             <SortDescending
                               className={
-                                `cursor-pointer h-3.5 ${
+                                `cursor-pointer h-4.5 ${
                                   isSortedDescending ? 'selected-green' : ''
                                 }`
                               }

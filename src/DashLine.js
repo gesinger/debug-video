@@ -51,12 +51,12 @@ export default function DashLine({
   });
   const hasDownloadedSegment = segments.find(({ key }) => downloadedSegments[key]);
   const chevronColor = hasDownloadedSegment ? 'text-blue-500' : '';
-  const chevronClass = `w-3 h-3 ${chevronColor}`;
+  const chevronClass = `w-4.5 h-4.5 ${chevronColor}`;
   const selectedSegmentBoxColors = selectedSegmentIndexes.map((selectedIndex) => (
     <div
       key={selectedIndex}
       className={
-        'mt-0.25 w-1 h-3 ' +
+        'ml-0.5 w-2 h-5 ' +
         `${colors.label.background[colorIndexStart + selectedIndex]}`
       }
     />

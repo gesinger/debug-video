@@ -3,6 +3,9 @@ module.exports = {
   plugins: [],
   theme: {
     extend: {
+      spacing: {
+        '4.5': '1.125rem',
+      },
       fontFamily: {
         display: ['IBM Plex Mono', 'Fira Mono', 'monospace'],
         body: ['IBM Plex Mono', 'Fira Mono', 'monospace'],
